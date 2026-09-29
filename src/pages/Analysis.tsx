@@ -87,7 +87,7 @@ export function Analysis() {
                 e.currentTarget.style.display = 'none';
               }} />
               
-              {!document.querySelector('img[src="/assets/sonar-demo.png"]')?.complete && (
+              {!(document.querySelector('img[src="/assets/sonar-demo.png"]') as HTMLImageElement)?.complete && (
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-text-muted font-mono text-sm">
                   <span>[ SONAR DATA STREAM ]</span>
                   <span className="text-primary mt-2">Rendering target acoustic returns...</span>
